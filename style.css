@@ -1,0 +1,117 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Map and Visualization Container */
+#map-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+
+/* Canvas for 2D Map Visualization */
+#map {
+  border: 1px solid #ccc;
+  width: 70%;
+  height: 100%;
+  margin-right: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for 3D Visualization */
+#threejs-container {
+  width: 30%;
+  height: 100%;
+  border: 1px solid #ccc;
+  background-color: #000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Information Panel */
+#info-panel {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title in the Info Panel */
+#info-panel h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Description in the Info Panel */
+#info-panel p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #34495e;
+}
+
+/* Metrics Section */
+#metrics {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Button Styles */
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #map-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #map,
+  #threejs-container {
+    width: 90%;
+    height: 300px;
+    margin: 10px 0;
+  }
+
+  #info-panel {
+    padding: 15px;
+  }
+
+  #info-panel h1 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
