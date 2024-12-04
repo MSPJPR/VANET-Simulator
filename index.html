@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VANET Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Map and Visualization Section -->
+  <div id="map-container">
+    <!-- Canvas for 2D Map Visualization -->
+    <canvas id="map"></canvas>
+    <!-- Container for 3D Visualization -->
+    <div id="threejs-container"></div>
+  </div>
+
+  <!-- Information and Control Panel -->
+  <div id="info-panel">
+    <h1>VANET Simulator</h1>
+    <p>Real-time vehicular network simulation with routing and security.</p>
+
+    <!-- Metrics Section -->
+    <p id="metrics">
+      Metrics:<br>
+      Messages Sent: 0<br>
+      Average Latency: 0 ms<br>
+      Total Energy Consumed: 0%
+    </p>
+
+    <!-- Start Simulation Button -->
+    <button id="start-simulation">Start Simulation</button>
+  </div>
+
+  <!-- Include Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
